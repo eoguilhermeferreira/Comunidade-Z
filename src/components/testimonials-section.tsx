@@ -1,28 +1,33 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Quote } from "lucide-react";
 
-import { Card } from "@/components/ui/card";
+import {
+  TestimonialCarousel,
+  type Testimonial,
+} from "@/components/ui/testimonial";
 
-const placeholders = [
+const testimonials: Testimonial[] = [
   {
-    quote:
+    id: 1,
+    name: "Membro da Comunidade Z",
+    avatar: "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?w=200&h=200&fit=crop&crop=faces",
+    description:
       "Em breve, depoimentos reais de quem faz parte da Comunidade Z aparecerão aqui.",
-    name: "Membro da Comunidade Z",
-    role: "Em breve",
   },
   {
-    quote:
+    id: 2,
+    name: "Membro da Comunidade Z",
+    avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=200&h=200&fit=crop&crop=faces",
+    description:
       "Faça parte agora e seu depoimento pode ser um dos primeiros a inspirar outras pessoas.",
-    name: "Membro da Comunidade Z",
-    role: "Em breve",
   },
   {
-    quote:
-      "Construído por pessoas que acreditam em crescer juntas, não sozinhas.",
+    id: 3,
     name: "Membro da Comunidade Z",
-    role: "Em breve",
+    avatar: "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?w=200&h=200&fit=crop&crop=faces",
+    description:
+      "Construído por pessoas que acreditam em crescer juntas, não sozinhas.",
   },
 ];
 
@@ -45,33 +50,17 @@ export function TestimonialsSection() {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
-          {placeholders.map((t, i) => (
-            <motion.div
-              key={i}
-              initial={{ opacity: 0, y: 40 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, amount: 0.4 }}
-              transition={{ duration: 0.7, delay: i * 0.1, ease: "easeOut" }}
-            >
-              <Card className="flex h-full flex-col justify-between gap-6 border-slate-700/40 bg-slate-800/30 p-6 backdrop-blur-sm">
-                <Quote className="size-6 text-white/40" />
-                <p className="text-sm leading-relaxed text-white/70">
-                  {t.quote}
-                </p>
-                <div className="flex items-center gap-3 border-t border-slate-700/40 pt-4">
-                  <div className="size-9 rounded-full bg-white/10" />
-                  <div>
-                    <p className="text-sm font-medium text-white">
-                      {t.name}
-                    </p>
-                    <p className="text-xs text-white/40">{t.role}</p>
-                  </div>
-                </div>
-              </Card>
-            </motion.div>
-          ))}
-        </div>
+        <motion.div
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.4 }}
+          transition={{ duration: 0.7, ease: "easeOut" }}
+        >
+          <TestimonialCarousel
+            testimonials={testimonials}
+            className="mx-auto max-w-2xl"
+          />
+        </motion.div>
       </div>
     </section>
   );
