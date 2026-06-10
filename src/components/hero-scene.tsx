@@ -23,8 +23,8 @@ function Particles() {
 
   useFrame((state) => {
     if (!ref.current) return;
-    ref.current.rotation.y = state.clock.elapsedTime * 0.02;
-    ref.current.rotation.x = state.clock.elapsedTime * 0.01;
+    ref.current.rotation.y = state.clock.elapsedTime * 0.06;
+    ref.current.rotation.x = Math.sin(state.clock.elapsedTime * 0.15) * 0.2;
   });
 
   return (
@@ -52,8 +52,9 @@ function EnergyRings() {
 
   useFrame((state) => {
     if (!group.current) return;
-    group.current.rotation.z = state.clock.elapsedTime * 0.08;
-    group.current.rotation.x = Math.sin(state.clock.elapsedTime * 0.1) * 0.3;
+    group.current.rotation.z = state.clock.elapsedTime * 0.25;
+    group.current.rotation.x = Math.sin(state.clock.elapsedTime * 0.3) * 0.5;
+    group.current.rotation.y = Math.cos(state.clock.elapsedTime * 0.2) * 0.4;
   });
 
   return (
@@ -82,9 +83,11 @@ function FloatingCore({
   useFrame((state) => {
     if (!ref.current) return;
     const t = state.clock.elapsedTime;
-    ref.current.position.y = Math.sin(t * 0.6) * 0.2;
-    ref.current.rotation.y = t * 0.2 + mouse.current.x * 0.5;
-    ref.current.rotation.x = mouse.current.y * 0.3;
+    ref.current.position.y = Math.sin(t * 0.8) * 0.3;
+    ref.current.rotation.y = t * 0.5 + mouse.current.x * 0.6;
+    ref.current.rotation.x = t * 0.15 + mouse.current.y * 0.4;
+    const scale = 1 + Math.sin(t * 1.2) * 0.06;
+    ref.current.scale.setScalar(scale);
   });
 
   return (

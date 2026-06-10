@@ -6,7 +6,6 @@ import Image from "next/image";
 import dynamic from "next/dynamic";
 
 import { Button } from "@/components/ui/button";
-import { SplineScene } from "@/components/ui/splite";
 import { Spotlight } from "@/components/ui/spotlight";
 
 const HeroScene = dynamic(() => import("@/components/hero-scene"), {
@@ -18,20 +17,11 @@ export function Hero() {
     <section className="relative flex min-h-screen w-full flex-col items-center justify-center overflow-hidden bg-[#0b0c10]">
       <HeroScene />
 
-      {/* Interactive 3D scene */}
-      <div className="pointer-events-none absolute inset-0 -z-10 opacity-60 md:opacity-80">
-        <Spotlight
-          className="-top-40 left-0 md:left-60 md:-top-20"
-          size={400}
-        />
-        <div className="pointer-events-auto absolute inset-0">
-          <SplineScene
-            scene="https://prod.spline.design/kZDDjO5HuC9GJUM2/scene.splinecode"
-            className="h-full w-full"
-          />
-        </div>
-      </div>
-
+      {/* Cursor spotlight */}
+      <Spotlight
+        className="-top-40 left-0 md:left-60 md:-top-20"
+        size={500}
+      />
 
       {/* Nebula glow background */}
       <div className="pointer-events-none absolute inset-0 -z-20">
