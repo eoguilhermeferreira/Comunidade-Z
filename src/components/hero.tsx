@@ -4,18 +4,29 @@ import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import dynamic from "next/dynamic";
+import { useEffect } from "react";
 
 import { Button } from "@/components/ui/button";
 import { Spotlight } from "@/components/ui/spotlight";
+import { renderCanvas } from "@/components/ui/canvas";
 
 const HeroScene = dynamic(() => import("@/components/hero-scene"), {
   ssr: false,
 });
 
 export function Hero() {
+  useEffect(() => {
+    renderCanvas();
+  }, []);
+
   return (
     <section className="relative flex min-h-screen w-full flex-col items-center justify-center overflow-hidden bg-[#0b0c10]">
       <HeroScene />
+
+      <canvas
+        id="canvas"
+        className="pointer-events-none absolute inset-0 -z-10"
+      />
 
       {/* Cursor spotlight */}
       <Spotlight
