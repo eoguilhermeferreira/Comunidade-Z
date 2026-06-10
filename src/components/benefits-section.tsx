@@ -52,9 +52,9 @@ const benefits = [
 ];
 
 const stackPositions = [
-  "[grid-area:stack] hover:-translate-y-10 before:absolute before:w-[100%] before:outline-1 before:rounded-xl before:outline-border before:h-[100%] before:content-[''] before:bg-blend-overlay before:bg-background/50 grayscale-[100%] hover:before:opacity-0 before:transition-opacity before:duration-700 hover:grayscale-0 before:left-0 before:top-0",
-  "[grid-area:stack] translate-x-12 translate-y-10 hover:-translate-y-1 before:absolute before:w-[100%] before:outline-1 before:rounded-xl before:outline-border before:h-[100%] before:content-[''] before:bg-blend-overlay before:bg-background/50 grayscale-[100%] hover:before:opacity-0 before:transition-opacity before:duration-700 hover:grayscale-0 before:left-0 before:top-0",
-  "[grid-area:stack] translate-x-24 translate-y-20 hover:translate-y-10",
+  "md:[grid-area:stack] md:hover:-translate-y-10 md:before:absolute md:before:w-[100%] md:before:outline-1 md:before:rounded-xl md:before:outline-border md:before:h-[100%] md:before:content-[''] md:before:bg-blend-overlay md:before:bg-background/50 md:grayscale-[100%] md:hover:before:opacity-0 md:before:transition-opacity md:before:duration-700 md:hover:grayscale-0 md:before:left-0 md:before:top-0",
+  "md:[grid-area:stack] md:translate-x-12 md:translate-y-10 md:hover:-translate-y-1 md:before:absolute md:before:w-[100%] md:before:outline-1 md:before:rounded-xl md:before:outline-border md:before:h-[100%] md:before:content-[''] md:before:bg-blend-overlay md:before:bg-background/50 md:grayscale-[100%] md:hover:before:opacity-0 md:before:transition-opacity md:before:duration-700 md:hover:grayscale-0 md:before:left-0 md:before:top-0",
+  "md:[grid-area:stack] md:translate-x-24 md:translate-y-20 md:hover:translate-y-10",
 ];
 
 function buildGroup(start: number) {
@@ -87,7 +87,7 @@ export function BenefitsSection() {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 gap-24 md:grid-cols-2 md:gap-12">
+        <div className="grid grid-cols-1 gap-10 md:grid-cols-2 md:gap-12 md:gap-y-24">
           {groups.map((cards, i) => (
             <motion.div
               key={i}
