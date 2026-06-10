@@ -14,37 +14,37 @@ import DisplayCards from "@/components/ui/display-cards";
 
 const benefits = [
   {
-    icon: <Users className="size-4 text-blue-300" />,
+    icon: <Users className="size-4 text-white/80" />,
     title: "Networking",
     description: "Conecte-se com pessoas ambiciosas.",
     date: "Comunidade Z",
   },
   {
-    icon: <CalendarDays className="size-4 text-blue-300" />,
+    icon: <CalendarDays className="size-4 text-white/80" />,
     title: "Eventos",
     description: "Experiências presenciais e online.",
     date: "Comunidade Z",
   },
   {
-    icon: <BookOpen className="size-4 text-blue-300" />,
+    icon: <BookOpen className="size-4 text-white/80" />,
     title: "Conteúdo Exclusivo",
     description: "Aprenda com conteúdos selecionados.",
     date: "Comunidade Z",
   },
   {
-    icon: <Lightbulb className="size-4 text-blue-300" />,
+    icon: <Lightbulb className="size-4 text-white/80" />,
     title: "Oportunidades",
     description: "Conheça novos projetos e negócios.",
     date: "Comunidade Z",
   },
   {
-    icon: <Globe2 className="size-4 text-blue-300" />,
+    icon: <Globe2 className="size-4 text-white/80" />,
     title: "Comunidade",
     description: "Faça parte de algo maior.",
     date: "Comunidade Z",
   },
   {
-    icon: <TrendingUp className="size-4 text-blue-300" />,
+    icon: <TrendingUp className="size-4 text-white/80" />,
     title: "Crescimento",
     description: "Desenvolva sua mentalidade e habilidades.",
     date: "Comunidade Z",
@@ -60,8 +60,8 @@ const stackPositions = [
 function buildGroup(start: number) {
   return benefits.slice(start, start + 3).map((b, i) => ({
     ...b,
-    iconClassName: "text-blue-500",
-    titleClassName: "text-blue-500",
+    iconClassName: "text-white",
+    titleClassName: "text-white",
     className: stackPositions[i],
   }));
 }

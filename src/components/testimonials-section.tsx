@@ -55,12 +55,12 @@ export function TestimonialsSection() {
               transition={{ duration: 0.7, delay: i * 0.1, ease: "easeOut" }}
             >
               <Card className="flex h-full flex-col justify-between gap-6 border-slate-700/40 bg-slate-800/30 p-6 backdrop-blur-sm">
-                <Quote className="size-6 text-sky-400/60" />
+                <Quote className="size-6 text-white/40" />
                 <p className="text-sm leading-relaxed text-white/70">
                   {t.quote}
                 </p>
                 <div className="flex items-center gap-3 border-t border-slate-700/40 pt-4">
-                  <div className="size-9 rounded-full bg-gradient-to-br from-sky-400/40 to-purple-400/40" />
+                  <div className="size-9 rounded-full bg-white/10" />
                   <div>
                     <p className="text-sm font-medium text-white">
                       {t.name}

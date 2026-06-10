@@ -9,7 +9,7 @@ export function CtaSection() {
   return (
     <section className="relative w-full overflow-hidden bg-[#0b0c10] py-32">
       <div className="pointer-events-none absolute inset-0 -z-10">
-        <div className="absolute left-1/2 top-1/2 h-[50vw] w-[50vw] -translate-x-1/2 -translate-y-1/2 rounded-full bg-gradient-to-br from-blue-600/25 via-purple-600/15 to-transparent blur-3xl" />
+        <div className="absolute left-1/2 top-1/2 h-[50vw] w-[50vw] -translate-x-1/2 -translate-y-1/2 rounded-full bg-white/10 blur-3xl" />
       </div>
 
       <div className="mx-auto flex max-w-3xl flex-col items-center gap-6 px-6 text-center">
@@ -43,13 +43,13 @@ export function CtaSection() {
         >
           <Button
             size="lg"
-            className="group relative overflow-hidden rounded-full bg-gradient-to-r from-sky-400 via-blue-500 to-purple-500 px-12 py-8 text-lg font-bold text-white shadow-[0_0_50px_rgba(59,130,246,0.5)] transition-transform hover:scale-105"
+            className="group relative overflow-hidden rounded-full bg-white px-12 py-8 text-lg font-bold text-black shadow-[0_0_50px_rgba(255,255,255,0.25)] transition-transform hover:scale-105"
           >
             <span className="relative z-10 flex items-center gap-2">
               ENTRAR NA COMUNIDADE Z
               <ArrowRight className="size-5 transition-transform group-hover:translate-x-1" />
             </span>
-            <span className="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/30 to-transparent transition-transform duration-700 group-hover:translate-x-full" />
+            <span className="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-black/10 to-transparent transition-transform duration-700 group-hover:translate-x-full" />
           </Button>
         </motion.div>
       </div>

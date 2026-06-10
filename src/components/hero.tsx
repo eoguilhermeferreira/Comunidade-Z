@@ -25,7 +25,7 @@ export function Hero() {
 
       {/* Nebula glow background */}
       <div className="pointer-events-none absolute inset-0 -z-20">
-        <div className="absolute left-1/2 top-1/2 h-[60vw] w-[60vw] -translate-x-1/2 -translate-y-1/2 rounded-full bg-gradient-to-br from-blue-600/30 via-purple-600/20 to-transparent blur-3xl" />
+        <div className="absolute left-1/2 top-1/2 h-[60vw] w-[60vw] -translate-x-1/2 -translate-y-1/2 rounded-full bg-white/10 blur-3xl" />
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_transparent_0%,_black_75%)]" />
       </div>
 
@@ -36,7 +36,7 @@ export function Hero() {
         transition={{ duration: 1.2, ease: "easeOut" }}
         className="relative mb-8 flex h-28 w-28 items-center justify-center overflow-hidden rounded-3xl border border-white/20 bg-white/5 shadow-[0_0_60px_rgba(56,189,248,0.35)] backdrop-blur-xl md:h-32 md:w-32"
       >
-        <div className="absolute inset-0 z-10 rounded-3xl bg-gradient-to-br from-blue-400/20 via-purple-400/10 to-transparent" />
+        <div className="absolute inset-0 z-10 rounded-3xl bg-gradient-to-br from-white/10 via-white/5 to-transparent" />
         <Image
           src="/logo-z.jpg"
           alt="Comunidade Z"
@@ -50,7 +50,7 @@ export function Hero() {
         initial={{ opacity: 0, y: 16 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, delay: 0.3 }}
-        className="mb-4 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-1.5 text-xs font-medium text-sky-200 backdrop-blur-md"
+        className="mb-4 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-1.5 text-xs font-medium text-white/80 backdrop-blur-md"
       >
         <Sparkles className="size-3.5" />
         Mais que uma comunidade, um movimento.
@@ -64,9 +64,7 @@ export function Hero() {
       >
         O próximo nível
         <br />
-        <span className="bg-gradient-to-r from-sky-300 via-blue-400 to-purple-400 bg-clip-text text-transparent">
-          começa aqui.
-        </span>
+        <span className="text-white/60">começa aqui.</span>
       </motion.h1>
 
       <motion.p
@@ -87,7 +85,7 @@ export function Hero() {
       >
         <Button
           size="lg"
-          className="group relative overflow-hidden rounded-full bg-gradient-to-r from-sky-400 via-blue-500 to-purple-500 px-8 py-6 text-base font-semibold text-white shadow-[0_0_30px_rgba(59,130,246,0.5)] transition-transform hover:scale-105"
+          className="group relative overflow-hidden rounded-full bg-white px-8 py-6 text-base font-semibold text-black shadow-[0_0_30px_rgba(255,255,255,0.25)] transition-transform hover:scale-105"
         >
           <span className="relative z-10 flex items-center gap-2">
             Entrar na Comunidade

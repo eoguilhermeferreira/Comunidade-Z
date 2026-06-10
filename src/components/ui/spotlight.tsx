@@ -67,7 +67,7 @@ export function Spotlight({
       ref={containerRef}
       className={cn(
         "pointer-events-none absolute rounded-full bg-[radial-gradient(circle_at_center,var(--tw-gradient-stops),transparent_80%)] blur-xl transition-opacity duration-200",
-        "from-sky-400 via-blue-400 to-purple-400",
+        "from-white via-white to-white",
         isHovered ? "opacity-20" : "opacity-0",
         className
       )}
