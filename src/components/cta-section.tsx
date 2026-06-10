@@ -42,14 +42,21 @@ export function CtaSection() {
           className="mt-4"
         >
           <Button
+            asChild
             size="lg"
             className="group relative overflow-hidden rounded-full bg-white px-12 py-8 text-lg font-bold text-black shadow-[0_0_50px_rgba(255,255,255,0.25)] transition-transform hover:scale-105"
           >
-            <span className="relative z-10 flex items-center gap-2">
-              ENTRAR NA COMUNIDADE Z
-              <ArrowRight className="size-5 transition-transform group-hover:translate-x-1" />
-            </span>
-            <span className="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-black/10 to-transparent transition-transform duration-700 group-hover:translate-x-full" />
+            <a
+              href="https://chat.whatsapp.com/EnpUztr4Px5HVaoDHAk8FP?s=cl&p=i&ilr=0"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span className="relative z-10 flex items-center gap-2">
+                ENTRAR NA COMUNIDADE Z
+                <ArrowRight className="size-5 transition-transform group-hover:translate-x-1" />
+              </span>
+              <span className="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-black/10 to-transparent transition-transform duration-700 group-hover:translate-x-full" />
+            </a>
           </Button>
         </motion.div>
       </div>
