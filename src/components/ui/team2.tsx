@@ -26,32 +26,32 @@ interface Team2Props {
 
 const defaultEntries: ChangelogEntry[] = [
   {
-    date: "2026",
+    date: "",
     title: "Lançamento da Comunidade Z",
     description:
       "O início do movimento. Os primeiros membros se conectam e dão forma à comunidade.",
     badge: "PRÓXIMO",
   },
   {
-    date: "2026",
+    date: "",
     title: "Primeiros Eventos Online",
     description:
       "Encontros virtuais, workshops e sessões de networking para acelerar conexões.",
   },
   {
-    date: "2027",
+    date: "",
     title: "Primeira Palestra Presencial",
     description:
       "A comunidade sai do digital para o presencial com o primeiro grande encontro.",
   },
   {
-    date: "2027",
+    date: "",
     title: "Expansão Nacional",
     description:
       "Novos hubs, novas cidades e novas oportunidades de networking por todo o país.",
   },
   {
-    date: "2028",
+    date: "",
     title: "Grande Conferência Comunidade Z",
     description:
       "O maior evento do movimento, reunindo lideranças, mentores e membros de todo o Brasil.",
@@ -90,9 +90,11 @@ export default function Team2({
                   </div>
                 )}
                 <CardHeader className="pb-2">
-                  <div className="mb-1 text-muted-foreground text-xs tracking-widest uppercase">
-                    {entry.date}
-                  </div>
+                  {entry.date && (
+                    <div className="mb-1 text-muted-foreground text-xs tracking-widest uppercase">
+                      {entry.date}
+                    </div>
+                  )}
                   <CardTitle className="text-base">{entry.title}</CardTitle>
                 </CardHeader>
                 <CardContent>

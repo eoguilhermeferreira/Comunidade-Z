@@ -70,7 +70,7 @@ export function BenefitsSection() {
   const groups = [buildGroup(0), buildGroup(3)];
 
   return (
-    <section className="relative w-full bg-black py-32">
+    <section className="relative w-full bg-[#0b0c10] py-32">
       <div className="mx-auto max-w-6xl px-6">
         <motion.div
           initial={{ opacity: 0, y: 30 }}

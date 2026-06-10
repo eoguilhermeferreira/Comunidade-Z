@@ -34,7 +34,7 @@ const events = [
 
 export function EventsSection() {
   return (
-    <section className="relative w-full bg-black py-32">
+    <section className="relative w-full bg-[#0b0c10] py-32">
       <div className="mx-auto max-w-6xl px-6">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -60,9 +60,9 @@ export function EventsSection() {
               viewport={{ once: true, amount: 0.4 }}
               transition={{ duration: 0.7, delay: i * 0.1, ease: "easeOut" }}
             >
-              <Card className="group relative h-full overflow-hidden border-white/10 bg-white/[0.03] p-6 backdrop-blur-sm transition-all duration-500 hover:-translate-y-2 hover:border-white/20 hover:bg-white/[0.06] hover:shadow-[0_0_40px_rgba(56,189,248,0.15)]">
+              <Card className="group relative h-full overflow-hidden border-slate-700/40 bg-slate-800/30 p-6 backdrop-blur-sm transition-all duration-500 hover:-translate-y-2 hover:border-white/20 hover:bg-white/[0.06] hover:shadow-[0_0_40px_rgba(56,189,248,0.15)]">
                 <div className="absolute inset-0 -z-10 bg-gradient-to-br from-sky-500/0 via-transparent to-purple-500/0 opacity-0 transition-opacity duration-500 group-hover:from-sky-500/10 group-hover:to-purple-500/10 group-hover:opacity-100" />
-                <div className="mb-4 flex size-12 items-center justify-center rounded-xl border border-white/10 bg-white/5 transition-transform duration-500 group-hover:scale-110 group-hover:border-sky-400/40">
+                <div className="mb-4 flex size-12 items-center justify-center rounded-xl border border-slate-700/40 bg-slate-700/30 transition-transform duration-500 group-hover:scale-110 group-hover:border-sky-400/40">
                   <event.icon className="size-5 text-sky-300" />
                 </div>
                 <h3 className="mb-2 text-lg font-semibold text-white">

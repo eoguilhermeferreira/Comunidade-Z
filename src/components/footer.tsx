@@ -4,10 +4,10 @@ import { AtSign, Send, Music2 } from "lucide-react";
 
 export function Footer() {
   return (
-    <footer className="w-full border-t border-white/10 bg-black py-12">
+    <footer className="w-full border-t border-slate-700/40 bg-[#0b0c10] py-12">
       <div className="mx-auto flex max-w-6xl flex-col items-center gap-8 px-6 sm:flex-row sm:justify-between">
         <div className="flex items-center gap-3">
-          <div className="relative size-10 overflow-hidden rounded-xl border border-white/10">
+          <div className="relative size-10 overflow-hidden rounded-xl border border-slate-700/40">
             <Image
               src="/logo-z.jpg"
               alt="Comunidade Z"
