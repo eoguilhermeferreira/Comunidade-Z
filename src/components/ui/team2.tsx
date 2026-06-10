@@ -83,7 +83,7 @@ export default function Team2({
         <div className="flex flex-col gap-4">
           {entries.map((entry, idx) => (
             <div key={entry.title}>
-              <Card className="relative bg-card/60 backdrop-blur-sm border-white/10">
+              <Card className="relative bg-card/60 backdrop-blur-sm border-white/10 transition-all duration-500 hover:-translate-y-1 hover:border-white/30 hover:bg-card active:-translate-y-1 active:border-white/30 active:bg-card">
                 {entry.badge && (
                   <div className="absolute top-4 right-4 z-10">
                     <Badge className="text-[10px]">{entry.badge}</Badge>

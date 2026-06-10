@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ArrowRight, Sparkles } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import dynamic from "next/dynamic";
 
@@ -44,16 +44,6 @@ export function Hero() {
           priority
           className="object-cover"
         />
-      </motion.div>
-
-      <motion.div
-        initial={{ opacity: 0, y: 16 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8, delay: 0.3 }}
-        className="mb-4 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-1.5 font-sans text-sm font-normal text-white/80 backdrop-blur-md"
-      >
-        <Sparkles className="size-3.5" />
-        Mais que uma comunidade, um movimento.
       </motion.div>
 
       <motion.h1
